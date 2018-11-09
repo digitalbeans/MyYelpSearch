@@ -7,3 +7,4 @@ scroll to the end of the list, it will download and display the next available 2
 
 Selecting the "Category" button will show a list of restaurant categories. By selecting one of these categories, the list of restaurants will be filtered.
 
+Requires iOS 12.0.
