@@ -1,6 +1,6 @@
 # MyYelpSearch
 
-MyYelpSearch demonstrates using the Yelp Fusion API to retrieve and display a list of restaurants near you. It uses the Alamofire cocoapod for network requests.
+MyYelpSearch demonstrates using the Yelp Fusion API to retrieve and display a list of restaurants near you, by using your location. It uses the Alamofire cocoapod for network requests.
 
 It will initially display the first 20 restaurants, and when you 
 scroll to the end of the list, it will download and display the next available 20 restaurants. 
