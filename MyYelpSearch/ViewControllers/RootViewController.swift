@@ -35,6 +35,8 @@ class RootViewController: UITableViewController {
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		
+		tableView.backgroundView = businesses.count == 0 ? backgroundView : nil
+
 		return businesses.count
 		
 	}
@@ -98,6 +100,16 @@ class RootViewController: UITableViewController {
 			self?.tableView.reloadData()
 		})
 	}
+	
+	var backgroundView: UIView {
+		
+		let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
+		label.text = Constants.Message.emptyList
+		label.textAlignment = .center
+		
+		return label
+	}
+
 }
 
 extension RootViewController: CLLocationManagerDelegate {

@@ -22,6 +22,11 @@ struct Constants {
 	struct segue {
 		static let categorySelectorySegue = "CategorySelectorSegue"
 	}
+	
+	struct Message {
+		static let emptyList = "No matching restaurants."
+	}
+
 }
 
 
