@@ -69,7 +69,6 @@ class RootViewController: UITableViewController {
 		
 		if y > height + reloadDistance {
 			
-//			activityIndicator.startAnimating()
 			guard let coordinate = locationManager.location?.coordinate else { return }
 			
 			loadData(coordinate: coordinate, category: selectedCategory)
