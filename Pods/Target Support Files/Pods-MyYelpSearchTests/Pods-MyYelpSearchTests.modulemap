@@ -1,0 +1,6 @@
+framework module Pods_MyYelpSearchTests {
+  umbrella header "Pods-MyYelpSearchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

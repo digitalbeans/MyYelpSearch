@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F287EB453228BD84C6AA975 /* Pods_MyYelpSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0AB9A60B6E80A702341E5 /* Pods_MyYelpSearchTests.framework */; };
 		17BE0D1A2195E23D000D21F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D192195E23D000D21F2 /* AppDelegate.swift */; };
-		17BE0D1C2195E23D000D21F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D1B2195E23D000D21F2 /* ViewController.swift */; };
+		17BE0D1C2195E23D000D21F2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D1B2195E23D000D21F2 /* RootViewController.swift */; };
 		17BE0D1F2195E23D000D21F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BE0D1D2195E23D000D21F2 /* Main.storyboard */; };
 		17BE0D212195E240000D21F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BE0D202195E240000D21F2 /* Assets.xcassets */; };
 		17BE0D242195E240000D21F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BE0D222195E240000D21F2 /* LaunchScreen.storyboard */; };
 		17BE0D2F2195E240000D21F2 /* MyYelpSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D2E2195E240000D21F2 /* MyYelpSearchTests.swift */; };
+		17BE0D3E2195E664000D21F2 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D3D2195E664000D21F2 /* DataLoader.swift */; };
+		17BE0D412195E6EA000D21F2 /* Businesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D402195E6EA000D21F2 /* Businesses.swift */; };
+		17BE0D452195F62E000D21F2 /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D432195F62E000D21F2 /* BusinessTableViewCell.swift */; };
+		17BE0D462195F62E000D21F2 /* BusinessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BE0D442195F62E000D21F2 /* BusinessTableViewCell.xib */; };
+		17BE0D4921960787000D21F2 /* UIImageView+Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D4821960787000D21F2 /* UIImageView+Offers.swift */; };
+		17BE0D4C219607CC000D21F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D4B219607CC000D21F2 /* Constants.swift */; };
+		17BE0D4E21962410000D21F2 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D4D21962410000D21F2 /* Categories.swift */; };
+		17BE0D50219625D4000D21F2 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D4F219625D4000D21F2 /* CategoriesTableViewController.swift */; };
+		64E07D223F72F240EAC2811B /* Pods_MyYelpSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CBEAA3DA128830A49544E2 /* Pods_MyYelpSearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12CA41E2AC3CE4CAB5306839 /* Pods-MyYelpSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYelpSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyYelpSearchTests/Pods-MyYelpSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		17BE0D162195E23D000D21F2 /* MyYelpSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyYelpSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE0D192195E23D000D21F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17BE0D1B2195E23D000D21F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17BE0D1B2195E23D000D21F2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		17BE0D1E2195E23D000D21F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17BE0D202195E240000D21F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17BE0D232195E240000D21F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +47,19 @@
 		17BE0D2A2195E240000D21F2 /* MyYelpSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyYelpSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE0D2E2195E240000D21F2 /* MyYelpSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyYelpSearchTests.swift; sourceTree = "<group>"; };
 		17BE0D302195E240000D21F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BE0D3D2195E664000D21F2 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		17BE0D402195E6EA000D21F2 /* Businesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Businesses.swift; sourceTree = "<group>"; };
+		17BE0D432195F62E000D21F2 /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
+		17BE0D442195F62E000D21F2 /* BusinessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessTableViewCell.xib; sourceTree = "<group>"; };
+		17BE0D4821960787000D21F2 /* UIImageView+Offers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Offers.swift"; sourceTree = "<group>"; };
+		17BE0D4B219607CC000D21F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		17BE0D4D21962410000D21F2 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		17BE0D4F219625D4000D21F2 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		2AE0AB9A60B6E80A702341E5 /* Pods_MyYelpSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyYelpSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54EC12C9126BEE2D9C8495CA /* Pods-MyYelpSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYelpSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyYelpSearch/Pods-MyYelpSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		75E839060982DA40EFE73D6B /* Pods-MyYelpSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYelpSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyYelpSearchTests/Pods-MyYelpSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A319AF936BC877381359290 /* Pods-MyYelpSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYelpSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyYelpSearch/Pods-MyYelpSearch.release.xcconfig"; sourceTree = "<group>"; };
+		C4CBEAA3DA128830A49544E2 /* Pods_MyYelpSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyYelpSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E07D223F72F240EAC2811B /* Pods_MyYelpSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F287EB453228BD84C6AA975 /* Pods_MyYelpSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +88,8 @@
 				17BE0D182195E23D000D21F2 /* MyYelpSearch */,
 				17BE0D2D2195E240000D21F2 /* MyYelpSearchTests */,
 				17BE0D172195E23D000D21F2 /* Products */,
+				56EDBD6960A37C305381BCE6 /* Pods */,
+				802CCD7DB898AB4864C4CCAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,10 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				17BE0D192195E23D000D21F2 /* AppDelegate.swift */,
-				17BE0D1B2195E23D000D21F2 /* ViewController.swift */,
-				17BE0D1D2195E23D000D21F2 /* Main.storyboard */,
-				17BE0D202195E240000D21F2 /* Assets.xcassets */,
-				17BE0D222195E240000D21F2 /* LaunchScreen.storyboard */,
+				17BE0D4A219607BC000D21F2 /* Constants */,
+				17BE0D4721960770000D21F2 /* Extensions */,
+				17BE0D3B2195E618000D21F2 /* ViewControllers */,
+				17BE0D3A2195E575000D21F2 /* Assets */,
+				17BE0D3F2195E6CD000D21F2 /* Models */,
+				17BE0D392195E569000D21F2 /* Networking */,
 				17BE0D252195E240000D21F2 /* Info.plist */,
 			);
 			path = MyYelpSearch;
@@ -96,6 +126,96 @@
 			path = MyYelpSearchTests;
 			sourceTree = "<group>";
 		};
+		17BE0D392195E569000D21F2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D3D2195E664000D21F2 /* DataLoader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		17BE0D3A2195E575000D21F2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D202195E240000D21F2 /* Assets.xcassets */,
+				17BE0D222195E240000D21F2 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		17BE0D3B2195E618000D21F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D422195F60A000D21F2 /* TableViewCells */,
+				17BE0D3C2195E62E000D21F2 /* Views */,
+				17BE0D1B2195E23D000D21F2 /* RootViewController.swift */,
+				17BE0D4F219625D4000D21F2 /* CategoriesTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17BE0D3C2195E62E000D21F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D1D2195E23D000D21F2 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17BE0D3F2195E6CD000D21F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D402195E6EA000D21F2 /* Businesses.swift */,
+				17BE0D4D21962410000D21F2 /* Categories.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		17BE0D422195F60A000D21F2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D432195F62E000D21F2 /* BusinessTableViewCell.swift */,
+				17BE0D442195F62E000D21F2 /* BusinessTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		17BE0D4721960770000D21F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D4821960787000D21F2 /* UIImageView+Offers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17BE0D4A219607BC000D21F2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				17BE0D4B219607CC000D21F2 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		56EDBD6960A37C305381BCE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54EC12C9126BEE2D9C8495CA /* Pods-MyYelpSearch.debug.xcconfig */,
+				9A319AF936BC877381359290 /* Pods-MyYelpSearch.release.xcconfig */,
+				12CA41E2AC3CE4CAB5306839 /* Pods-MyYelpSearchTests.debug.xcconfig */,
+				75E839060982DA40EFE73D6B /* Pods-MyYelpSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		802CCD7DB898AB4864C4CCAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4CBEAA3DA128830A49544E2 /* Pods_MyYelpSearch.framework */,
+				2AE0AB9A60B6E80A702341E5 /* Pods_MyYelpSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17BE0D332195E240000D21F2 /* Build configuration list for PBXNativeTarget "MyYelpSearch" */;
 			buildPhases = (
+				818AF365769EE9D5B1A02AE6 /* [CP] Check Pods Manifest.lock */,
 				17BE0D122195E23D000D21F2 /* Sources */,
 				17BE0D132195E23D000D21F2 /* Frameworks */,
 				17BE0D142195E23D000D21F2 /* Resources */,
+				3673BE360225D1D2FF4440B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17BE0D362195E240000D21F2 /* Build configuration list for PBXNativeTarget "MyYelpSearchTests" */;
 			buildPhases = (
+				E77E8E9A5BD5949B3124AE72 /* [CP] Check Pods Manifest.lock */,
 				17BE0D262195E240000D21F2 /* Sources */,
 				17BE0D272195E240000D21F2 /* Frameworks */,
 				17BE0D282195E240000D21F2 /* Resources */,
@@ -178,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17BE0D242195E240000D21F2 /* LaunchScreen.storyboard in Resources */,
+				17BE0D462195F62E000D21F2 /* BusinessTableViewCell.xib in Resources */,
 				17BE0D212195E240000D21F2 /* Assets.xcassets in Resources */,
 				17BE0D1F2195E23D000D21F2 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +316,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3673BE360225D1D2FF4440B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyYelpSearch/Pods-MyYelpSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyYelpSearch/Pods-MyYelpSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		818AF365769EE9D5B1A02AE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyYelpSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77E8E9A5BD5949B3124AE72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyYelpSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17BE0D122195E23D000D21F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17BE0D1C2195E23D000D21F2 /* ViewController.swift in Sources */,
+				17BE0D452195F62E000D21F2 /* BusinessTableViewCell.swift in Sources */,
+				17BE0D4E21962410000D21F2 /* Categories.swift in Sources */,
+				17BE0D4921960787000D21F2 /* UIImageView+Offers.swift in Sources */,
+				17BE0D1C2195E23D000D21F2 /* RootViewController.swift in Sources */,
+				17BE0D412195E6EA000D21F2 /* Businesses.swift in Sources */,
+				17BE0D4C219607CC000D21F2 /* Constants.swift in Sources */,
+				17BE0D50219625D4000D21F2 /* CategoriesTableViewController.swift in Sources */,
 				17BE0D1A2195E23D000D21F2 /* AppDelegate.swift in Sources */,
+				17BE0D3E2195E664000D21F2 /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +546,7 @@
 		};
 		17BE0D342195E240000D21F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54EC12C9126BEE2D9C8495CA /* Pods-MyYelpSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +565,7 @@
 		};
 		17BE0D352195E240000D21F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A319AF936BC877381359290 /* Pods-MyYelpSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +584,7 @@
 		};
 		17BE0D372195E240000D21F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CA41E2AC3CE4CAB5306839 /* Pods-MyYelpSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +606,7 @@
 		};
 		17BE0D382195E240000D21F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E839060982DA40EFE73D6B /* Pods-MyYelpSearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
