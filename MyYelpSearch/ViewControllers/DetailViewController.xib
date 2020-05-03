@@ -116,6 +116,7 @@
                         </label>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="jjc-p7-8hf" firstAttribute="width" secondItem="roz-FF-3Uc" secondAttribute="width" multiplier="0.75" id="lYl-FB-OYI"/>
                         <constraint firstItem="jjc-p7-8hf" firstAttribute="leading" secondItem="roz-FF-3Uc" secondAttribute="leading" id="qF7-KD-Kew"/>
                     </constraints>
                 </stackView>
