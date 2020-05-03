@@ -15,6 +15,10 @@ class RootViewController: UITableViewController {
 	var businesses: [Business] = []
 	var selectedCategory: Category?
 
+    var selectedCell: BusinessTableViewCell?
+    var selectedCellImageViewSnapshot: UIView?
+	var animator: Animator?
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -53,9 +57,24 @@ class RootViewController: UITableViewController {
 		return cell
 	}
 	
+	fileprivate func presentDetailView(_ business: Business, image: UIImage?) {
+		let detailViewController = DetailViewController()
+		detailViewController.transitioningDelegate = self
+		detailViewController.business = business
+		detailViewController.image = image
+		detailViewController.modalPresentationStyle = .fullScreen
+		present(detailViewController, animated: true)
+	}
+	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
 		tableView.deselectRow(at: indexPath, animated: true)
+		
+		selectedCell = tableView.cellForRow(at: indexPath) as? BusinessTableViewCell
+		selectedCellImageViewSnapshot = selectedCell?.businessImageView.snapshotView(afterScreenUpdates: false)
+
+		let business = businesses[indexPath.row]
+		presentDetailView(business, image: selectedCell?.businessImageView.image)
 		
 	}
 	
@@ -157,4 +176,29 @@ extension RootViewController: CategorySelectorProtocol {
 		selectedCategory = category
 		refresh()
 	}
+}
+
+extension RootViewController: UIViewControllerTransitioningDelegate {
+
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+		guard let navigationController = presenting as? UINavigationController,
+			let firstViewController = navigationController.viewControllers.first as? RootViewController,
+            let secondViewController = presented as? DetailViewController,
+            let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
+            else { return nil }
+
+        animator = Animator(type: .present, firstViewController: firstViewController, secondViewController: secondViewController, selectedCellImageViewSnapshot: selectedCellImageViewSnapshot)
+        return animator
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+		guard let secondViewController = dismissed as? DetailViewController,
+            let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
+            else { return nil }
+
+        animator = Animator(type: .dismiss, firstViewController: self, secondViewController: secondViewController, selectedCellImageViewSnapshot: selectedCellImageViewSnapshot)
+        return animator
+    }
 }

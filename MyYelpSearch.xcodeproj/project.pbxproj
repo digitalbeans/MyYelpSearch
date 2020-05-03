@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F287EB453228BD84C6AA975 /* Pods_MyYelpSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0AB9A60B6E80A702341E5 /* Pods_MyYelpSearchTests.framework */; };
+		17A985F0245F039D008B35EF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A985EE245F039D008B35EF /* DetailViewController.swift */; };
+		17A985F1245F039D008B35EF /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A985EF245F039D008B35EF /* DetailViewController.xib */; };
+		17A985F8245F5CD9008B35EF /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A985F7245F5CD9008B35EF /* Animator.swift */; };
 		17BE0D1A2195E23D000D21F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D192195E23D000D21F2 /* AppDelegate.swift */; };
 		17BE0D1C2195E23D000D21F2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE0D1B2195E23D000D21F2 /* RootViewController.swift */; };
 		17BE0D1F2195E23D000D21F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BE0D1D2195E23D000D21F2 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		12CA41E2AC3CE4CAB5306839 /* Pods-MyYelpSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYelpSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyYelpSearchTests/Pods-MyYelpSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		17A985EE245F039D008B35EF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		17A985EF245F039D008B35EF /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		17A985F7245F5CD9008B35EF /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		17BE0D162195E23D000D21F2 /* MyYelpSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyYelpSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE0D192195E23D000D21F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BE0D1B2195E23D000D21F2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A985F6245F5B6B008B35EF /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				17A985F7245F5CD9008B35EF /* Animator.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
 		17BE0D0D2195E23D000D21F2 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				17BE0D192195E23D000D21F2 /* AppDelegate.swift */,
+				17A985F6245F5B6B008B35EF /* Animators */,
 				17BE0D4A219607BC000D21F2 /* Constants */,
 				17BE0D4721960770000D21F2 /* Extensions */,
 				17BE0D3B2195E618000D21F2 /* ViewControllers */,
@@ -150,6 +165,8 @@
 				17BE0D3C2195E62E000D21F2 /* Views */,
 				17BE0D1B2195E23D000D21F2 /* RootViewController.swift */,
 				17BE0D4F219625D4000D21F2 /* CategoriesTableViewController.swift */,
+				17A985EE245F039D008B35EF /* DetailViewController.swift */,
+				17A985EF245F039D008B35EF /* DetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -302,6 +319,7 @@
 			files = (
 				17BE0D242195E240000D21F2 /* LaunchScreen.storyboard in Resources */,
 				17BE0D462195F62E000D21F2 /* BusinessTableViewCell.xib in Resources */,
+				17A985F1245F039D008B35EF /* DetailViewController.xib in Resources */,
 				17BE0D212195E240000D21F2 /* Assets.xcassets in Resources */,
 				17BE0D1F2195E23D000D21F2 /* Main.storyboard in Resources */,
 			);
@@ -385,7 +403,9 @@
 				17BE0D412195E6EA000D21F2 /* Businesses.swift in Sources */,
 				17BE0D4C219607CC000D21F2 /* Constants.swift in Sources */,
 				17BE0D50219625D4000D21F2 /* CategoriesTableViewController.swift in Sources */,
+				17A985F0245F039D008B35EF /* DetailViewController.swift in Sources */,
 				17BE0D1A2195E23D000D21F2 /* AppDelegate.swift in Sources */,
+				17A985F8245F5CD9008B35EF /* Animator.swift in Sources */,
 				17BE0D3E2195E664000D21F2 /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
